@@ -13,13 +13,11 @@ on:
       kernel_source:
         description: "Select the kernel source"
         required: false
-        default: "ophub/linux-6.1.y-rockchip"
+        default: "daydreams1231/linux-6.1.y-rk3588-rock5b"
         type: choice
         options:
           - unifreq/linux-6.1.y-rockchip
-          - unifreq/linux-5.10.y-rk35xx
-          - ophub/linux-6.1.y-rockchip
-          - ophub/linux-5.10.y-rk35xx
+          - daydreams1231/linux-6.1.y-rk3588-rock5b
       kernel_version:
         description: "Select kernel version"
         required: false
@@ -70,7 +68,7 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-rk3588-ophub"
+        default: "-rock5b"
         type: choice
         options:
           - -rk3588-ophub
@@ -83,7 +81,7 @@ on:
           - -summer-growing
           - -autumn-harvesting
           - -winter-storing
-          - -yourname
+          - -rock5b
       kernel_config:
         description: "Set the path of kernel .config"
         required: false
